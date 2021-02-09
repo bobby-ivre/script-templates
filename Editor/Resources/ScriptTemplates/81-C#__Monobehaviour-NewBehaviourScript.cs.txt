@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------------------------------------------------
+// Creation Date:	#CREATIONDATE#
+// Author:				bgreaney
+// Description:		
+// --------------------------------------------------------------------------------------------------------------------
+
+using UnityEngine;
+
+namespace REPLACE
+{
+	/// <summary>
+	/// 
+	/// </summary>
+	public class #SCRIPTNAME# : MonoBehaviour
+	{
+		void Start()
+		{
+			#NOTRIM#
+		}
+		
+		void Update()
+		{
+			#NOTRIM#
+		}
+	}
+}
