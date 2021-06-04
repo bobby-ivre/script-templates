@@ -26,7 +26,7 @@ namespace LughNut.EditorTools
         {
 			if (EditorUtility.DisplayDialog("Update Script Templates",
 				"Using this utility will delete your existing script templates " +
-				"and use the built-in LughNut scripts. Are you sure?",
+				"and use the built-in templates. Are you sure?",
 				"Ok", "Cancel"))
             {
 				CopyTemplateFiles();
@@ -92,7 +92,6 @@ namespace LughNut.EditorTools
 				return;
 
 			string fileContent = System.IO.File.ReadAllText(path);
-
 			fileContent = fileContent.Replace("#CREATIONDATE#", System.DateTime.Today.ToString("dd/MM/yy") + "");
 			fileContent = fileContent.Replace("#DEVELOPER#", System.Environment.UserName);
 			if (EditorPrefs.HasKey("defaultNamespace"))
